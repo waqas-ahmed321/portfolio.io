@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.css">
+    <title>My Portfolio</title>
+    
+    <style>
+       *{
+            margin: 0;
+            padding: 0;
+        }
+       body
+        {
+            background-image: url(Images/bg\ img3.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+        .dp
+        {
+            height: 50px;
+            width: 50px;
+            border: solid #ffbf00;
+            border-radius: 50px;
+            transform: rotateZ(120deg);
+            animation: infinite spin 15s;
+        }
+        @keyframes spin 
+        {
+         from{transform: rotate(0deg);}
+         to{transform: rotate(360deg);}
+        }
+        #set
+        {
+          transform: rotateZ(120deg);
+            animation: infinite gear 15s;
+        }
+        @keyframes gear 
+        {
+         from{transform: rotate(0deg);}
+         to{transform: rotate(360deg);}
+        }
+        
+        
+       .wc
+       {
+        color: #ffbf00;
+       }
+       .container
+       {
+        height: auto;
+        
+        position: relative;
+        
+        
+        
+        
+       }
+       .image
+       {
+        height: 300px;
+        width: 290px;
+        border: solid #ffbf00;
+        margin-top: -800px;
+        margin-left: 74%;
+        border-radius: 20px;
+    
+
+       }
+       .image:hover
+       {
+        transform: scale(1.1, 1.1);
+        transition-duration: 3s;
+       }
+       /* @keyframes spin 
+        {
+         from{transform: rotate(0deg);}
+         to{transform: rotate(360deg);}
+        } */
+        @media screen and (max-width: 554px) {
+  .image{
+            height:170px ;
+            width: 170px;
+            margin-left: 170px;
+            margin-top: 10px;
+  }
+}
+#resume
+{
+    margin-left: 76%;
+    margin-top: -470px;
+    /* margin-left: 78%; */
+}
+@media screen and (max-width: 554px) {
+  #resume{
+    margin-left: 33%;
+    margin-top: 10px;
+    height: 50px;
+    font-size: medium;
+
+  }
+}
+.img1
+{
+    height:50vw;
+    width: 50%;
+    position: relative;
+}
+.text
+{
+    padding-top: 200px;
+    padding-left: 150px;
+    color: #ffbf00;
+}
+@media screen and (max-width: 554px) {
+  .text{
+    width: 450px;
+    padding-top: 100px;
+    text-align:center;
+    
+
+  }
+}
+.container button
+{
+margin-left: 30px;
+margin-top: -700px;
+}
+
+@media screen and (max-width: 554px) {
+  .text{
+    margin-left: -50px;
+    
+  }
+}
+@media screen and (max-width: 554px) {
+  .container button{
+    margin-top: 50px;
+    margin-left:125px;
+    /* display: list-item; */
+    
+    
+  }
+}
+.footer
+{
+  height: 200px;
+  width: 100%;
+  background-color: #000000;
+  /* border: solid #5460b5; */
+}
+.footer button
+{
+  margin-top: 30px;
+  margin-left: 50px;
+}
+@media screen and (max-width: 554px) {
+  .footer button{
+    margin-top: 50px;
+    margin-left:180px;
+
+    
+    
+  }
+}
+.clear button
+{
+  margin-top: -100px;
+}
+
+
+      
+    </style>
+   
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            
+          <a class="navbar-brand" href="Images/drwaqas2.png" target="_blank"><strong><img src="Images/drwaqas2.png" class="dp"> WAQAS AHMED</strong></a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            
+            <span class="navbar-toggler-icon">
+                
+            </span>
+            
+          </button>
+          
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><marquee class="wc">WELCOEM TO MY PORTFOLIO</marquee></h5>
+              
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i> Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"><i class="fa-brands fa-r-project"></i> My Projects</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-gear" id="set"></i> Settings
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-pen-to-square"></i> Edit Profile</a></li>
+                    
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+                
+                
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+        </nav>
+        <div class="img1">
+            <div class="text">
+                <h3>Hi! Myself Waqas Ahmed<br> and i am a web designer and developer.</h3>
+                
+            </div>
+        </div>
+        <img src="Images/drwaqas2.png" class="image">
+          <a href="waqas ahmed2 cv.pdf" target="_blank"><button type="button" class="btn btn-primary btn-lg" id="resume"><i class="fa-solid fa-download"></i> Download Resume</button></a>
+        <div class="container">
+            <a href="qualification.html"><button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-graduation-cap"></i> <strong>View Qualifications</strong></button></a>
+            <a href="skills.html"><button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-code"></i> <strong> View My Skills</strong></button></a>
+            <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-clone"></i> <strong>View My Experience</strong></button>
+          
+         
+        </div>
+       </div>
+      <div class="footer">
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"> <i class="fa-solid fa-address-book"></i> Contact Me</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Me</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" style="background-color: #ccccff">
+                <form action="save.php" method="post">
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label"><i class="fa-solid fa-user"></i> Your Name:*</label>
+                    <input type="text" class="form-control" id="recipient-name" name="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="recipient-email" class="col-form-label"><i class="fa-solid fa-envelope"></i> Your Email:*</label>
+                    <input type="email" class="form-control" id="recipient-email" name="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label"><i class="fa-solid fa-message"></i> Enter Message:*</label>
+                    <textarea class="form-control" id="message-text" name="msg"></textarea>
+                  </div>
+                  <div class="modal-footer">
+                    
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close</button>
+                <button type="submit" class="btn btn-primary" name="submit"><i class="fa-solid fa-check"></i> Submit</button>
+
+                </form>
+                
+              </div>
+              
+              <div class="clear">
+                <button onclick="Clearfield()" class="btn btn-danger"><i class="fa-solid fa-broom"></i> Clear All</button>
+              </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+         function Clearfield()
+          {
+            document.getElementById('recipient-name').value='';
+            document.getElementById('recipient-email').value='';
+            document.getElementById('message-text').value='';
+          }
+      </script>
+      
+         <!-- <script>
+         
+          function myfunc()
+          {
+            
+            var name = document.getElementById("recipient-name").value;
+            var email = document.getElementById("recipient-email").value;
+            var message = document.getElementById("message-text").value;
+            alert(name + email + message);
+          
+          var username = localStorage.setItem("name", name);
+          var useremail = localStorage.setItem("email", email);
+          var usermsg = localStorage.setItem("message", message);
+          }
+
+         </script> -->
+         
+    
+    
+  
+        
+</body>
+</html>
